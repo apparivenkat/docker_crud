@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8009
+    ports:
+      - 8009:8000
